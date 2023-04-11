@@ -60,7 +60,7 @@ for i = 1:N
         
         
         A([idx_c,idx_nc],[idx_c,idx_nc]) = A;
-        conditions(i,ii+1) = condest(transp(A(idx_nb, idx_nb)));
+        conditions(i,ii+1) = condest(transpose(A(idx_nb, idx_nb)));
         
     end
 end

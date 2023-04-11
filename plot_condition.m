@@ -70,4 +70,5 @@ for k = 1:7
     loglog(h_range', conditions(:,k), 'Marker', markerShapes{k}, 'MarkerSize',6,'LineWidth',mod(7-k,3)+1)
     hold on
 end
+xlabel('Time step size'); ylabel('Condition number');
 legend('original','Scaling (i)','Scaling (ii)','Scaling (iii)','Scaling (iv)','Scaling (v)','Scaling (vi)')

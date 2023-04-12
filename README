@@ -1,0 +1,9 @@
+This repository contains code to obtain results from paper:
+
+D. Balian, M. Merkel, J. Ostrowski, H. De Gersem, S. Schöps, "Low-Frequency Stabilization of Dielectric Simulation Problems with Conductors and Insulators", 2023. DOI: 10.48550/arXiv.2302.00313
+
+Following functions are contained:
+
+capacitor_plot_condition.m: Matlab code to compute and plot the condition number of the plate capacitor toy example (Fig.5)
+circuit_compute_condition.nb: Mathematica code to compute the condition number of the RC circuit example symbolically
+circuit_plot_condition.nb: Mathematica code to plot the condition number of the RC circuit example (Fig. 3)

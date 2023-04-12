@@ -1,0 +1,24 @@
+G1=1;
+C1=10^(-12);
+Nfreq=31;
+Kond=Array[0&,{Nfreq,5}];
+For[i=1,i<=Nfreq,i++,
+f= N[10^(2*i-22)];
+Kond[[i,1]] =f;
+Kond[[i,2]] =N[2*Pi*f];
+For[j=1,j<4,j++,
+If[j==1,
+a1=a2=b1=b2=1];
+If[j==2,
+a1=b1=1;
+a2=b2=Sqrt[1/w]];
+If[j==3,
+a1=b1=Sqrt[1/(G1+I*w*2*C1)];
+a2=b2=Sqrt[1/(I*w*2*C1)]];
+mat={{a1*b1*(I*w*C1+G1),a1*b2*(-I*w*C1)},{a2*b1*(-I*w*C1),a2*b2*(2*I*w*C1)}};
+inv=Inverse[mat];
+K = FullSimplify[ComplexExpand[Norm[mat,1]*Norm[inv,1]]]/. w->N[2*Pi*f];
+Kond[[i,j+2]] = N[Re[K],5];
+];
+]
+Export["condition_circuit.csv",Kond,"CSV"]

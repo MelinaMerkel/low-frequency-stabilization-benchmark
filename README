@@ -4,6 +4,6 @@ D. Balian, M. Merkel, J. Ostrowski, H. De Gersem, S. Schöps, "Low-Frequency Sta
 
 Following functions are contained:
 
-capacitor_plot_condition.m: Matlab code to compute and plot the condition number of the plate capacitor toy example (Fig.5)
-circuit_compute_condition.nb: Mathematica code to compute the condition number of the RC circuit example symbolically
+eqs_toy_example_plot_condition.m: Matlab code to compute and plot the condition number of the electroquasistatic toy example (Fig.5)
+rc_circuit_compute_condition.nb: Mathematica code to compute the condition number of the RC rc_circuit example symbolically
 circuit_plot_condition.nb: Mathematica code to plot the condition number of the RC circuit example (Fig. 3)
